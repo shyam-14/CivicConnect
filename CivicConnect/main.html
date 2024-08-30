@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Smart City</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#complaint-form">Make a Complaint</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="departments">
+        <h2>City Departments</h2>
+        <ul>
+            <li>Water Supply - Emergency: 1234567890</li>
+            <li>Electricity - Emergency: 1234567891</li>
+            <li>Sanitation - Emergency: 1234567892</li>
+            <li>Roads - Emergency: 1234567893</li>
+        </ul>
+    </section>
+    <section id="complaint-form">
+        <h2>Make a Complaint or Request</h2>
+        <form id="complaint-form">
+            <input type="text" id="description" placeholder="Description of the problem" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="division" placeholder="Division" required>
+            <input type="text" id="street" placeholder="Street" required>
+            <input type="text" id="district" placeholder="District" required>
+            <input type="text" id="pincode" placeholder="Pincode" required>
+            <select id="problem-type">
+                <option value="roads">Roads</option>
+                <option value="sewage">Sewage</option>
+                <option value="lights">Tube Lights</option>
+                <option value="trees">Trees Fallen</option>
+                <option value="water">Water Stagged</option>
+                <option value="potholes">Potholes</option>
+            </select>
+            <input type="file" id="image-upload" accept="image/*">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@smartcity.com</p>
+        <p>Phone: 123-456-7890</p>
+    </footer>
+</body>
+</html>
